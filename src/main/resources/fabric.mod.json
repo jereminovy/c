@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "autorepairminer",
+  "version": "${version}",
+  "name": "Auto Repair Miner",
+  "description": "Przytrzymuje LPM/PPM i co 5 minut wpisuje /repair.",
+  "authors": [
+    "soudim"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "pl.soudim.autorepairminer.AutoRepairMinerClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
